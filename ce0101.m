@@ -18,7 +18,7 @@ function ce0101
   y
   plot(x,y);
 endfunction
-function retval=g(prev)
-  retval=2*prev*(1-prev);
+function y=g(x)
+  y=2*x*(1-x);
 endfunction
 

@@ -1,7 +1,7 @@
-function ce0103
+function ce0104
   
-  nmax=15;
-  x0=[0.2 0.5 0.95];
+  nmax=50;
+  x0=[0.3 0.31 0.301];
   
   y=zeros(nmax,1+length(x0));
   y(1,:)=[0 x0];
@@ -12,8 +12,10 @@ function ce0103
       y(i,j+1)=g(y(i-1,j+1));
     end
   end
-  y  
+  plot(y(:,1),y(:,2:end));
+  ylabel('g(x)');
+  xlabel('x');
 endfunction
 function y=g(x)
-  y=(1+sqrt(6))*x*(1-x);
+  y=4*x*(1-x);
 endfunction

@@ -14,6 +14,6 @@ function ce0102
   end
   y  
 endfunction
-function retval=g(prev)
-  retval=3.3*prev*(1-prev);
+function y=g(x)
+  y=3.3*x*(1-x);
 endfunction
