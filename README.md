@@ -1,0 +1,1 @@
+Computer exercises from the book ALIGOOD, K., SAUER, T., YORKE, Y., 'Chaos: an introduction to dynamical systems', 1996, Springer-Verlag, New York.

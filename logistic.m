@@ -1,6 +1,6 @@
 function logistic
   
-  niter=100;
+  niter=1000;
   x0=0.3;
   a=[1:0.001:4];
   p=zeros(length(a),niter);
@@ -25,7 +25,7 @@ function y=g(x,a)
 endfunction
 function p=poles(y)
   p=y;
-  for w=1:1:floor(length(y)/2)
+  for w=1:1:min(floor(length(y)/2),20)
     d=sum(y(length(y)-w:end).-y(length(y)-w-w-1:length(y)-w-1));
     if (d<=0.01)
       p=y(length(y)-w:length(y));
